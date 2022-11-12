@@ -13,6 +13,8 @@
 		507C2CBF291FF28D006D9FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507C2CBD291FF28D006D9FA8 /* Main.storyboard */; };
 		507C2CC1291FF294006D9FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507C2CC0291FF294006D9FA8 /* Assets.xcassets */; };
 		507C2CC4291FF294006D9FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 507C2CC2291FF294006D9FA8 /* LaunchScreen.storyboard */; };
+		507C2CCC29201C89006D9FA8 /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507C2CCB29201C89006D9FA8 /* CategoryCollectionViewController.swift */; };
+		507C2CCE29201D41006D9FA8 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507C2CCD29201D41006D9FA8 /* CategoryCollectionViewCell.swift */; };
 		CD61A7EE98EE6FD1CF4F2018 /* Pods_OnlineShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53AC86D6A0703F93E64F9B0 /* Pods_OnlineShop.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		507C2CC0291FF294006D9FA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		507C2CC3291FF294006D9FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		507C2CC5291FF294006D9FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507C2CCB29201C89006D9FA8 /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
+		507C2CCD29201D41006D9FA8 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		C53AC86D6A0703F93E64F9B0 /* Pods_OnlineShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnlineShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -66,6 +70,8 @@
 				507C2CB7291FF28D006D9FA8 /* AppDelegate.swift */,
 				507C2CB9291FF28D006D9FA8 /* SceneDelegate.swift */,
 				507C2CBB291FF28D006D9FA8 /* ViewController.swift */,
+				507C2CCB29201C89006D9FA8 /* CategoryCollectionViewController.swift */,
+				507C2CCD29201D41006D9FA8 /* CategoryCollectionViewCell.swift */,
 				507C2CBD291FF28D006D9FA8 /* Main.storyboard */,
 				507C2CC0291FF294006D9FA8 /* Assets.xcassets */,
 				507C2CC2291FF294006D9FA8 /* LaunchScreen.storyboard */,
@@ -88,7 +94,6 @@
 				17DCD1C4143C38FD050B1A70 /* Pods-OnlineShop.debug.xcconfig */,
 				47142E153199BED611417217 /* Pods-OnlineShop.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,6 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				507C2CCC29201C89006D9FA8 /* CategoryCollectionViewController.swift in Sources */,
+				507C2CCE29201D41006D9FA8 /* CategoryCollectionViewCell.swift in Sources */,
 				507C2CBC291FF28D006D9FA8 /* ViewController.swift in Sources */,
 				507C2CB8291FF28D006D9FA8 /* AppDelegate.swift in Sources */,
 				507C2CBA291FF28D006D9FA8 /* SceneDelegate.swift in Sources */,
