@@ -13,6 +13,9 @@ class CategoryCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        этот метод вызывается единственный раз для первоначального создания категорий на сервере Firebase
+//        createCategorySet()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

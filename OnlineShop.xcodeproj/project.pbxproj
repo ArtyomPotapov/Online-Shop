@@ -18,6 +18,7 @@
 		507C2CD029203D4A006D9FA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 507C2CCF29203D4A006D9FA8 /* GoogleService-Info.plist */; };
 		50C43B2F2921371C00AE6D31 /* FirebaseCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C43B2E2921371C00AE6D31 /* FirebaseCollectionReference.swift */; };
 		50C43B34292149FB00AE6D31 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C43B33292149FB00AE6D31 /* Category.swift */; };
+		50C43B37292155A000AE6D31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C43B36292155A000AE6D31 /* Constants.swift */; };
 		CD61A7EE98EE6FD1CF4F2018 /* Pods_OnlineShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53AC86D6A0703F93E64F9B0 /* Pods_OnlineShop.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		507C2CCF29203D4A006D9FA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		50C43B2E2921371C00AE6D31 /* FirebaseCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollectionReference.swift; sourceTree = "<group>"; };
 		50C43B33292149FB00AE6D31 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		50C43B36292155A000AE6D31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C53AC86D6A0703F93E64F9B0 /* Pods_OnlineShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnlineShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				50C43B2E2921371C00AE6D31 /* FirebaseCollectionReference.swift */,
+				50C43B36292155A000AE6D31 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				507C2CB8291FF28D006D9FA8 /* AppDelegate.swift in Sources */,
 				507C2CBA291FF28D006D9FA8 /* SceneDelegate.swift in Sources */,
 				50C43B34292149FB00AE6D31 /* Category.swift in Sources */,
+				50C43B37292155A000AE6D31 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
