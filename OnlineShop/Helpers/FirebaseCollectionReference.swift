@@ -8,13 +8,11 @@
 import Foundation
 import FirebaseFirestore
 
-
 enum FCollectionReference: String {
     case User
     case Category
     case Item
     case Basket
-    
 }
 
 func firebaseReference(_ collectionReference: FCollectionReference) -> CollectionReference{

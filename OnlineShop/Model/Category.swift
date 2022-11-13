@@ -39,13 +39,11 @@ func downloadCategoryFromFirebase(completion: @escaping ([Category])->()){
         }
         if !snapshot.isEmpty {
             for categoryDict in snapshot.documents{
-                print("Категория создана )")
                 categoryArray.append(Category(dictionary: categoryDict.data() as NSDictionary))
             }
         }
         completion(categoryArray)
     }
-    
 }
 
 //MARK: Save category function

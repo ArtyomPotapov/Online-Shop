@@ -57,6 +57,10 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="120" height="120"/>
+                                <connections>
+                                    <outlet property="cellImageView" destination="dL1-li-4PT" id="Uab-23-Efd"/>
+                                    <outlet property="cellLabel" destination="45h-Uc-XUU" id="dJ9-Pb-BIp"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
