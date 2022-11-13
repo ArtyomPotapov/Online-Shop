@@ -28,6 +28,26 @@ class Category {
     }
 }
 
+
+func downloadCategoryFromFirebase(completion: @escaping ([Category])->()){
+    var categoryArray: [Category] = []
+    
+    firebaseReference(.Category).getDocuments { snapshot, error in
+        guard let snapshot = snapshot else {
+            completion(categoryArray)
+            return
+        }
+        if !snapshot.isEmpty {
+            for categoryDict in snapshot.documents{
+                print("Категория создана )")
+                categoryArray.append(Category(dictionary: categoryDict.data() as NSDictionary))
+            }
+        }
+        completion(categoryArray)
+    }
+    
+}
+
 //MARK: Save category function
 
 func saveCategoryToFirebase(_ category: Category){

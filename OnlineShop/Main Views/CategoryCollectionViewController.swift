@@ -16,6 +16,12 @@ class CategoryCollectionViewController: UICollectionViewController {
         
 //        этот метод вызывается единственный раз для первоначального создания категорий на сервере Firebase
 //        createCategorySet()
+        
+            //отработка загрузки категорий с сервера, тренировочное
+        
+//        downloadCategoryFromFirebase { categories in
+//            print("Запрос выполнен")
+//        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
