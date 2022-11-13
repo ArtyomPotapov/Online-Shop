@@ -35,7 +35,7 @@ class CategoryCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CategoryCollectionViewCell
-//        cell.
+        cell.setCell(categotiesArray[indexPath.row])
         return cell
         
     }
