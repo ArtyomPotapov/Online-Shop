@@ -20,6 +20,7 @@
 		50C43B34292149FB00AE6D31 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C43B33292149FB00AE6D31 /* Category.swift */; };
 		50C43B37292155A000AE6D31 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C43B36292155A000AE6D31 /* Constants.swift */; };
 		50C43B3B2924F66D00AE6D31 /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C43B3A2924F66D00AE6D31 /* ItemTableViewController.swift */; };
+		50C43B3D2924FC1D00AE6D31 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C43B3C2924FC1D00AE6D31 /* Item.swift */; };
 		CD61A7EE98EE6FD1CF4F2018 /* Pods_OnlineShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53AC86D6A0703F93E64F9B0 /* Pods_OnlineShop.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		50C43B33292149FB00AE6D31 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		50C43B36292155A000AE6D31 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		50C43B3A2924F66D00AE6D31 /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
+		50C43B3C2924FC1D00AE6D31 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C53AC86D6A0703F93E64F9B0 /* Pods_OnlineShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnlineShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				50C43B33292149FB00AE6D31 /* Category.swift */,
+				50C43B3C2924FC1D00AE6D31 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C43B3D2924FC1D00AE6D31 /* Item.swift in Sources */,
 				50C43B2F2921371C00AE6D31 /* FirebaseCollectionReference.swift in Sources */,
 				50C43B3B2924F66D00AE6D31 /* ItemTableViewController.swift in Sources */,
 				507C2CCC29201C89006D9FA8 /* CategoryCollectionViewController.swift in Sources */,
