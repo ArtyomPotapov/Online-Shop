@@ -146,12 +146,74 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="RXR-lU-4g4">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2cK-Hz-s8A"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2cK-Hz-s8A">
+                            <connections>
+                                <segue destination="IgS-tn-5oQ" kind="show" identifier="itemsToDetailItemSegue" id="m4M-6g-PIO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N3v-79-7k0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2547.826086956522" y="-1587.0535714285713"/>
+        </scene>
+        <!--Товар-->
+        <scene sceneID="xJh-h3-bve">
+            <objects>
+                <viewController id="IgS-tn-5oQ" customClass="AddItemViewController" customModule="OnlineShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a26-Q3-DgA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Название" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QXm-j3-u1i">
+                                <rect key="frame" x="20" y="108" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Цена" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WMA-KW-jRv">
+                                <rect key="frame" x="20" y="164" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Описание" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pw3-hA-3sM">
+                                <rect key="frame" x="20" y="224" width="374" height="150"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Qg2-4w-nKA"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmK-9U-zzD">
+                                <rect key="frame" x="20" y="404" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Камера"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WX8-UW-rdt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qmK-9U-zzD" firstAttribute="top" secondItem="pw3-hA-3sM" secondAttribute="bottom" constant="30" id="Ioy-c1-JBf"/>
+                            <constraint firstItem="WMA-KW-jRv" firstAttribute="width" secondItem="QXm-j3-u1i" secondAttribute="width" id="Lab-4m-Rgr"/>
+                            <constraint firstItem="pw3-hA-3sM" firstAttribute="top" secondItem="WMA-KW-jRv" secondAttribute="bottom" constant="26" id="Rdl-1K-J2Z"/>
+                            <constraint firstItem="pw3-hA-3sM" firstAttribute="leading" secondItem="WX8-UW-rdt" secondAttribute="leading" constant="20" id="XFt-qi-18t"/>
+                            <constraint firstItem="WX8-UW-rdt" firstAttribute="trailing" secondItem="pw3-hA-3sM" secondAttribute="trailing" constant="20" id="d4q-hN-v2h"/>
+                            <constraint firstItem="QXm-j3-u1i" firstAttribute="top" secondItem="WX8-UW-rdt" secondAttribute="top" constant="20" id="doA-yp-TxT"/>
+                            <constraint firstItem="QXm-j3-u1i" firstAttribute="leading" secondItem="WX8-UW-rdt" secondAttribute="leading" constant="20" id="fg8-41-SJG"/>
+                            <constraint firstItem="qmK-9U-zzD" firstAttribute="leading" secondItem="WX8-UW-rdt" secondAttribute="leading" constant="20" id="iUp-tP-ARS"/>
+                            <constraint firstItem="WMA-KW-jRv" firstAttribute="centerX" secondItem="QXm-j3-u1i" secondAttribute="centerX" id="imX-cl-SmH"/>
+                            <constraint firstItem="WMA-KW-jRv" firstAttribute="top" secondItem="QXm-j3-u1i" secondAttribute="bottom" constant="22" id="jYS-Q9-M9R"/>
+                            <constraint firstItem="WX8-UW-rdt" firstAttribute="trailing" secondItem="QXm-j3-u1i" secondAttribute="trailing" constant="20" id="uno-IP-jhZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Товар" id="J4b-Bx-vRp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="feC-nx-fML"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jz-uQ-ZyM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3340.579710144928" y="-1587.0535714285713"/>
         </scene>
         <!--Поиск-->
         <scene sceneID="9ZG-fR-zL4">
@@ -172,7 +234,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OnlineShop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,8 +290,14 @@
         <image name="default" width="35" height="35"/>
         <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
         <image name="tshirt.fill" catalog="system" width="128" height="99"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
