@@ -145,7 +145,9 @@
                             <outlet property="delegate" destination="GZM-wq-IFG" id="8Gc-DH-LQM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="RXR-lU-4g4"/>
+                    <navigationItem key="navigationItem" id="RXR-lU-4g4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2cK-Hz-s8A"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N3v-79-7k0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

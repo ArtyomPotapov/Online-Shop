@@ -16,14 +16,7 @@ class Item {
     var price: Int!
     var imageLinks: [String]!
     
-//    init(id: String? = nil, categoryID: String? = nil, name: String? = nil, description: String? = nil, price: Int, imageLinks: [String]? = nil) {
-//        self.id = id
-//        self.categoryID = categoryID
-//        self.name = name
-//        self.description = description
-//        self.price = price
-//        self.imageLinks = imageLinks
-//    }
+    init() {}
     
     init(dictionary: NSDictionary){
         id = dictionary[kOBJECTID] as? String
@@ -33,4 +26,15 @@ class Item {
         price = dictionary[kPRICE] as? Int
         imageLinks = dictionary[kIMAGELINKS] as? [String]
     }
+}
+
+//MARK: Helper function
+
+func saveItemToFirestore(_ item: Item) {
+    firebaseReference(.Item).document(item.id).setData(itemDictionaryFrom(item) as! [String : Any])
+}
+
+func itemDictionaryFrom(_ item: Item) -> NSDictionary {
+    
+    return NSDictionary(objects: [item.id!, item.categoryID!,  item.name!, item.description!, item.price!, item.imageLinks!], forKeys: [kOBJECTID as NSCopying, kCATEGORYID as NSCopying, kNAME as NSCopying, kDESCRIPTION as NSCopying, kPRICE as NSCopying, kIMAGELINKS as NSCopying])
 }
