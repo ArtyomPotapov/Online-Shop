@@ -9,7 +9,7 @@ import UIKit
 
 class ItemTableViewController: UITableViewController {
 
-    var category: Category?
+    var category: Category!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,5 +25,12 @@ class ItemTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "itemsToAddItemSegue" {
+            let vc = segue.destination as! AddItemViewController
+            vc.category = category!
+        }
     }
 }

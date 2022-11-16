@@ -148,7 +148,7 @@
                     <navigationItem key="navigationItem" id="RXR-lU-4g4">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="2cK-Hz-s8A">
                             <connections>
-                                <segue destination="IgS-tn-5oQ" kind="show" identifier="itemsToDetailItemSegue" id="m4M-6g-PIO"/>
+                                <segue destination="IgS-tn-5oQ" kind="show" identifier="itemsToAddItemSegue" id="m4M-6g-PIO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
