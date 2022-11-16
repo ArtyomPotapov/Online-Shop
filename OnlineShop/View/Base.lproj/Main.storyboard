@@ -189,10 +189,14 @@
                                 <rect key="frame" x="20" y="404" width="76" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Камера"/>
+                                <connections>
+                                    <action selector="cameraButtonTapped:" destination="IgS-tn-5oQ" eventType="touchUpInside" id="3T9-nY-HDh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WX8-UW-rdt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="qmK-9U-zzD" firstAttribute="top" secondItem="pw3-hA-3sM" secondAttribute="bottom" constant="30" id="Ioy-c1-JBf"/>
                             <constraint firstItem="WMA-KW-jRv" firstAttribute="width" secondItem="QXm-j3-u1i" secondAttribute="width" id="Lab-4m-Rgr"/>
@@ -206,12 +210,29 @@
                             <constraint firstItem="WMA-KW-jRv" firstAttribute="top" secondItem="QXm-j3-u1i" secondAttribute="bottom" constant="22" id="jYS-Q9-M9R"/>
                             <constraint firstItem="WX8-UW-rdt" firstAttribute="trailing" secondItem="QXm-j3-u1i" secondAttribute="trailing" constant="20" id="uno-IP-jhZ"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jmQ-4b-PGH" appends="YES" id="VUK-Ff-kA1"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Товар" id="J4b-Bx-vRp">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="feC-nx-fML"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="feC-nx-fML">
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="IgS-tn-5oQ" id="KH3-Xf-EUn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="pw3-hA-3sM" id="Gyv-w9-rQr"/>
+                        <outlet property="nameTextField" destination="QXm-j3-u1i" id="gnz-CX-iGb"/>
+                        <outlet property="priceTextField" destination="WMA-KW-jRv" id="qlR-yp-E9f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jz-uQ-ZyM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jmQ-4b-PGH">
+                    <connections>
+                        <action selector="tapGestureTapped:" destination="IgS-tn-5oQ" id="bqm-FV-dvz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3340.579710144928" y="-1587.0535714285713"/>
         </scene>
