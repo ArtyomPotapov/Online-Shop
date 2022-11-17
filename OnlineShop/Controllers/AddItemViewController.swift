@@ -61,7 +61,11 @@ class AddItemViewController: UIViewController {
         item.description = descriptionTextView.text
         item.price = Int(priceTextField.text!)
         if itemImages.count > 0 {
-            
+            uploadImages(images: itemImages, itemId: item.id) { imageLinks in
+                item.imageLinks = imageLinks
+                saveItemToFirestore(item)
+                self.navigationController?.popViewController(animated: false)
+            }
         } else {
             saveItemToFirestore(item)
             navigationController?.popViewController(animated: false)
