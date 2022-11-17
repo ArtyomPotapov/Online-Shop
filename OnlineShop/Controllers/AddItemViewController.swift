@@ -36,8 +36,6 @@ class AddItemViewController: UIViewController {
     @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
         if checkFieldsAreCompleted() {
             saveToFirebase()
-            
-            
         } else {
             print("Заполните все поля")
             //TODO:  показать ошибку пользователю
@@ -71,16 +69,14 @@ class AddItemViewController: UIViewController {
     }
     
     //MARK: Show Gallery
+    
     func showImagesGallery(){
-        
         gallery = GalleryController()
         gallery.delegate = self
-        
         Config.tabsToShow = [.imageTab, .cameraTab]
-        Config.Camera.imageLimit = 6
-        
-        present(gallery, animated: false)
+        Config.Camera.imageLimit = 4
 
+        present(gallery, animated: false)
     }
 }
 
@@ -91,10 +87,7 @@ extension AddItemViewController: GalleryControllerDelegate{
             Image.resolve(images: images) { resolveImages in
                 self.itemImages = resolveImages
             }
-            
         }
-        
-        
         controller.dismiss(animated: false)
     }
     
@@ -109,6 +102,4 @@ extension AddItemViewController: GalleryControllerDelegate{
     func galleryControllerDidCancel(_ controller: GalleryController) {
         controller.dismiss(animated: false)
     }
-    
-    
 }
