@@ -30,7 +30,7 @@ class AddItemViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        activityIndicator = NVActivityIndicatorView(frame: CGRect(x: view.frame.width / 2 - 30, y: view.frame.height / 2 - 30, width: 60, height: 60), type: NVActivityIndicatorType.ballPulse, color: #colorLiteral(red: 0.5, green: 0.3816443086, blue: 0.1365861744, alpha: 1), padding: nil)
+        activityIndicator = NVActivityIndicatorView(frame: CGRect(x: view.frame.width / 2 - 30, y: view.frame.height / 2 - 30, width: 60, height: 60), type: NVActivityIndicatorType.pacman, color: #colorLiteral(red: 0.5, green: 0.3816443086, blue: 0.1365861744, alpha: 1), padding: nil)
     }
 
     @IBAction func cameraButtonTapped(_ sender: UIBarButtonItem) {
@@ -102,7 +102,8 @@ class AddItemViewController: UIViewController {
     func showImagesGallery(){
         gallery = GalleryController()
         gallery.delegate = self
-        Config.tabsToShow = [.imageTab, .cameraTab]
+        Config.tabsToShow = [.cameraTab, .imageTab]
+        Config.initialTab = .imageTab
         Config.Camera.imageLimit = 4
 
         present(gallery, animated: false)
