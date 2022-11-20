@@ -23,6 +23,7 @@
 		50C43B3D2924FC1D00AE6D31 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C43B3C2924FC1D00AE6D31 /* Item.swift */; };
 		50C43B3F2926B84900AE6D31 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C43B3E2926B84800AE6D31 /* Reachability.swift */; };
 		50C43B412926BA1400AE6D31 /* DownloaderImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C43B402926BA1400AE6D31 /* DownloaderImages.swift */; };
+		50C43B43292AD7B900AE6D31 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C43B42292AD7B900AE6D31 /* ItemTableViewCell.swift */; };
 		CD61A7EE98EE6FD1CF4F2018 /* Pods_OnlineShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53AC86D6A0703F93E64F9B0 /* Pods_OnlineShop.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		50C43B3C2924FC1D00AE6D31 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		50C43B3E2926B84800AE6D31 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		50C43B402926BA1400AE6D31 /* DownloaderImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderImages.swift; sourceTree = "<group>"; };
+		50C43B42292AD7B900AE6D31 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		C53AC86D6A0703F93E64F9B0 /* Pods_OnlineShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnlineShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 			children = (
 				507C2CBD291FF28D006D9FA8 /* Main.storyboard */,
 				507C2CCD29201D41006D9FA8 /* CategoryCollectionViewCell.swift */,
+				50C43B42292AD7B900AE6D31 /* ItemTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				50C43B3B2924F66D00AE6D31 /* ItemTableViewController.swift in Sources */,
 				507C2CCC29201C89006D9FA8 /* CategoryCollectionViewController.swift in Sources */,
 				507C2CCE29201D41006D9FA8 /* CategoryCollectionViewCell.swift in Sources */,
+				50C43B43292AD7B900AE6D31 /* ItemTableViewCell.swift in Sources */,
 				50C43B412926BA1400AE6D31 /* DownloaderImages.swift in Sources */,
 				507C2CBC291FF28D006D9FA8 /* AddItemViewController.swift in Sources */,
 				507C2CB8291FF28D006D9FA8 /* AppDelegate.swift in Sources */,

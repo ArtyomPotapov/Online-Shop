@@ -10,21 +10,29 @@ import UIKit
 class ItemTableViewController: UITableViewController {
 
     var category: Category!
+    var itemArray: [Item] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = category.name
     }
 
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadItems()
+    }
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-       
-        return 0
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return itemArray.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -32,5 +40,9 @@ class ItemTableViewController: UITableViewController {
             let vc = segue.destination as! AddItemViewController
             vc.category = category!
         }
+    }
+    
+    func loadItems(){
+        
     }
 }
