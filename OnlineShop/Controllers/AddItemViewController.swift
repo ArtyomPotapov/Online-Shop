@@ -25,7 +25,12 @@ class AddItemViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        activityIndicator = NVActivityIndicatorView(frame: CGRect(x: view.frame.width / 2 - 30, y: view.frame.height / 2 - 30, width: 60, height: 60), type: NVActivityIndicatorType.ballPulse, color: #colorLiteral(red: 0.5, green: 0.3816443086, blue: 0.1365861744, alpha: 1), padding: nil)
     }
 
     @IBAction func cameraButtonTapped(_ sender: UIBarButtonItem) {
@@ -54,6 +59,7 @@ class AddItemViewController: UIViewController {
     }
     
     func saveToFirebase() {
+        showLoadingInticator()
         let item = Item()
         item.id = UUID().uuidString
         item.name = nameTextField.text
@@ -64,11 +70,28 @@ class AddItemViewController: UIViewController {
             uploadImages(images: itemImages, itemId: item.id) { imageLinks in
                 item.imageLinks = imageLinks
                 saveItemToFirestore(item)
+                self.hideLoadingInticator()
                 self.navigationController?.popViewController(animated: false)
             }
         } else {
             saveItemToFirestore(item)
             navigationController?.popViewController(animated: false)
+        }
+    }
+    
+    //MARK: Activity Indicator
+    
+    func showLoadingInticator(){
+        if activityIndicator != nil {
+            view.addSubview(activityIndicator!)
+            activityIndicator!.startAnimating()
+        }
+    }
+    
+    func hideLoadingInticator(){
+        if activityIndicator != nil {
+            view.removeFromSuperview()
+            activityIndicator!.stopAnimating()
         }
     }
     
