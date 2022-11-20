@@ -42,8 +42,10 @@ class AddItemViewController: UIViewController {
         if checkFieldsAreCompleted() {
             saveToFirebase()
         } else {
-            print("Заполните все поля")
-            //TODO:  показать ошибку пользователю
+            hud.textLabel.text = "Все поля обязательны к заполнению"
+            hud.indicatorView = JGProgressHUDErrorIndicatorView()
+            hud.show(in: view)
+            hud.dismiss(afterDelay: 2.0)
         }
     }
     
