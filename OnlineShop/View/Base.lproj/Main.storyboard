@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="cKJ-bu-yUc">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="cKJ-bu-yUc" customClass="ItemTableViewCell" customModule="OnlineShop" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cKJ-bu-yUc" id="Bej-4b-6Jx">
@@ -138,6 +138,12 @@
                                         <constraint firstItem="Kqp-q4-R07" firstAttribute="centerY" secondItem="Bej-4b-6Jx" secondAttribute="centerY" id="kWy-Qp-C3Y"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="itemDescriptionLabel" destination="MfB-vA-Ux2" id="Se7-gA-Dbc"/>
+                                    <outlet property="itemImageView" destination="8zz-Py-cEt" id="QiK-3j-IIN"/>
+                                    <outlet property="itemPriceLabel" destination="Kqp-q4-R07" id="StV-V0-Gg2"/>
+                                    <outlet property="itenNameLabel" destination="Xgo-6A-QDI" id="cte-iD-FdS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

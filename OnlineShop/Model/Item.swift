@@ -51,10 +51,8 @@ func downloadItemFromFirebase(withCategoryID: String, completion: @escaping (_ i
             for itemDict in snapshot.documents {
                 itemArray.append(Item(dictionary: itemDict.data() as NSDictionary))
             }
-            completion(itemArray)
         }
+        completion(itemArray)
     }
-    
-    
-    completion(itemArray)
 }
+

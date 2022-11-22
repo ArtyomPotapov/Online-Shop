@@ -31,7 +31,8 @@ class ItemTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ItemTableViewCell
+        cell.setCell(itemArray[indexPath.row])
         return cell
     }
     
@@ -44,5 +45,10 @@ class ItemTableViewController: UITableViewController {
     
     func loadItems(){
         
+        downloadItemFromFirebase(withCategoryID: category.id) { itemArray in
+            print(itemArray.count)
+            self.itemArray = itemArray
+            self.tableView.reloadData()
+        }
     }
 }
